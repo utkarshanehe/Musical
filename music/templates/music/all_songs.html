@@ -1,0 +1,61 @@
+{% extends 'music/navbar.html' %}
+{% block title %}Songs{% endblock %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        {% if songs %}
+        <div class="col-sm-offset-1 col-sm-10">
+            <h2>All Songs</h2>
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Song title</th>
+                                <th>Artist</th>
+                                <th>Favorite</th>
+                                <th>Play</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for song in songs %}
+                            <tr>
+                                <td>{{ song.song_title }}</td>
+                                <td>{{ song.album.artist }}</td>
+                                <td>
+                                    <a href="{% url 'music:favorite' 'songs_page' song.id %}">
+                                            <span class="glyphicon glyphicon-star {% if song.is_favorite %}active{% endif %}"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="{{song.song_file.url}}">
+                                        <button type="button" class="btn btn-success btn-xs">
+                                            <span class="glyphicon glyphicon-play"></span>
+                                        </button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <form action="{% url 'music:delete-song' 'songs_page' song.id %}">
+                                        <button type="submit" class="btn btn-danger btn-xs">
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                        </button>
+                                    </form>
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <h2>No songs found</h2>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

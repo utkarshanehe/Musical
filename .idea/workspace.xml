@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8651e92d-b7c5-493a-9bb7-d20a96c983bf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bABv1Ic0iBUEj9Xd7rc3cUSE29" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\djangoProjects\FirstProject\FirstProject" />
+      <recent name="E:\djangoProjects\FirstProject\music" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoProjects\FirstProject" />
+      <recent name="E:\djangoProjects\FirstProject\music\static\music\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python">
+      <module name="Musical" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8651e92d-b7c5-493a-9bb7-d20a96c983bf" name="Default Changelist" comment="" />
+      <created>1588065246440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588065246440</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Scopes" timestamp="1589648049585">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Scopes/0.0.1366.728@0.0.1366.728" timestamp="1589648049585" />
+    <state x="111" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588086993056">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="111" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588086993056" />
+    <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590059680432">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590059680432" />
+    <state x="412" y="152" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588084483451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="152" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1588084483451" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1590139067316">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1590139067316" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590987390880">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590987390864" />
+    <state x="505" y="278" key="Github.CreateGistDialog" timestamp="1589887532165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="505" y="278" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1589887532165" />
+    <state width="1366" height="118" key="GridCell.Tab.0.bottom" timestamp="1588485365198">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1366" height="118" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588485365198" />
+    <state width="1366" height="118" key="GridCell.Tab.0.center" timestamp="1588485365198">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1366" height="118" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588485365198" />
+    <state width="1366" height="118" key="GridCell.Tab.0.left" timestamp="1588485365198">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1366" height="118" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588485365198" />
+    <state width="1366" height="118" key="GridCell.Tab.0.right" timestamp="1588485365198">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1366" height="118" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588485365198" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1590987654939">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590987654939" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590140694543">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1590140694543" />
+    <state x="338" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590138841398">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="338" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1590138841398" />
+    <state x="380" y="0" width="606" height="728" key="find.popup" timestamp="1591035893105">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="0" width="606" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1591035893105" />
+    <state x="346" y="49" width="670" height="676" key="search.everywhere.popup" timestamp="1590984164646">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="670" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1590984164646" />
+  </component>
+</project>

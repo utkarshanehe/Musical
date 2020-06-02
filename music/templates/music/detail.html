@@ -1,0 +1,90 @@
+{% extends 'music/navbar.html' %}
+{% block title %}Album Details{% endblock %}
+{% block body %}
+
+<style>
+.glyphicon-star {
+    color: #CCCCCC;
+    font-size: 20px;
+}
+
+.glyphicon-star.active {
+    color: #FDB230;
+}
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Left Album  -->
+        <div class="col-sm-4 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="{% url 'music:detail' album.id %}">
+                        {% if album.album_logo %}
+                            <img src="{{ album.album_logo.url }}" class="img-responsive">
+                        {% else %}
+                            <h3>Image not found</h3>
+                        {% endif %}
+                    </a>
+                    <h1>{{ album.album_title }}</h1>
+                    <h2>{{ album.artist }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Song Info -->
+        <div class="col-sm-8 col-md-9">
+            <a href="{% url 'music:add-song' album.id %}" class="btn btn-primary pull-right">Add New Song</a></li>
+            <br><br><br>
+            {% if album.song_set.all.count %}
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>All Songs</h3>
+                    {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Play</th>
+                            <th>Favorite</th>
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for song in album.song_set.all %}
+                            <tr>
+                                <td>{{ song.song_title }}</td>
+                                <td>
+                                    <a target="_blank" href="{{ song.song_file.url }}">
+                                        <button type="button" class="btn btn-success btn-xs">
+                                            &nbsp;<span class="glyphicon glyphicon-play"></span>&nbsp;
+                                        </button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'music:favorite' 'detail_page' song.id %}"><span class="glyphicon glyphicon-star {% if song.is_favorite %}active{% endif %}"></span></a>
+                                </td>
+                                <td>
+                                    <form action="{% url 'music:delete-song' 'detail_page' song.id %}" method="post" style="display: inline;">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-danger btn-xs">
+                                            &nbsp;<span class="glyphicon glyphicon-trash"></span>&nbsp;
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <h2>Please add some songs</h2>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Musical{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy">
+    <link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <!-- Header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'music:index' %}">Musical</a>
+            </div>
+
+            <!-- Items -->
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="nav navbar-nav">
+                    <!-- Albums -->
+                    <li class="">
+                        <a href="{% url 'music:index' %}">
+                            <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> &nbsp; Albums
+                        </a>
+                    </li>
+
+                    <!-- Music -->
+                    <li class="">
+                        <a href="{% url 'music:view-songs' %}">
+                            <span class="glyphicon glyphicon-music" aria-hidden="true"></span> &nbsp; Music
+                        </a>
+                    </li>
+
+                    <!-- Form -->
+                    <form class="navbar-form navbar-left" role="search" method="get" action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="q" value="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Add Album -->
+                    <li class="">
+                        <a href="{% url 'music:add-album' %}">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> &nbsp; Add Album
+                        </a>
+                    </li>
+
+                    <!-- Logout -->
+                    <li class="">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span> &nbsp; Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>
